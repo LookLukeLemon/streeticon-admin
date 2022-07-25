@@ -1,21 +1,6 @@
-import Document, {
-  DocumentContext,
-  DocumentInitialProps,
-  Head,
-  Main,
-  Html,
-  NextScript,
-} from "next/document";
+import Document, { Head, Main, Html, NextScript } from "next/document";
 
 class MyDocument extends Document {
-  static async getInitialProps(
-    ctx: DocumentContext
-  ): Promise<DocumentInitialProps> {
-    const initialProps = await Document.getInitialProps(ctx);
-
-    return initialProps;
-  }
-
   redner() {
     return (
       <Html>
